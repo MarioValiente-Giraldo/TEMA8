@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="lblRaton_stage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#lblRaton_dentro" onMouseExited="#lblRaton_fuera" prefHeight="258.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.tema8.ejercicio3.ratonDentroFuera">
+   <children>
+      <Label fx:id="lblRaton" maxHeight="100.0" maxWidth="200.0" onMouseEntered="#lblRaton_dentro" onMouseExited="#lblRaton_fuera" style="-fx-border-color: red;" text="El raton está fuera" />
+   </children>
+</StackPane>
