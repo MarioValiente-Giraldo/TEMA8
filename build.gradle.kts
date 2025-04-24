@@ -7,7 +7,7 @@ group = "org.example"
 version = "1.0-SNAPSHOT"
 
 application{
-    mainClass="daw.tema8.ejercicio4.ejercicio4MVC"
+    mainClass="proyectoKiosko.kiosko.main"
 }
 javafx{
     modules("javafx.controls","javafx.fxml")
