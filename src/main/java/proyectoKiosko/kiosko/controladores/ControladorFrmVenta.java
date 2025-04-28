@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import proyectoKiosko.kiosko.modelo.Carrito;
 import proyectoKiosko.kiosko.modelo.Producto;
@@ -64,9 +65,14 @@ public class ControladorFrmVenta implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(ClassLoader.getSystemResource("frmCompra.fxml"));
         try {
             Scene escenaCompra = new Scene(fxmlLoader.load());
-            ventana.setTitle("Confirmar compra");
-            ventana.setScene(escenaCompra);
-            ventana.show();
+            ControladorFrmCompra controladorFrmCompra = fxmlLoader.getController();
+            controladorFrmCompra.setCarrito(this.carrito);
+            Stage stage = new Stage();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(ventana);
+            stage.setTitle("Confirmar compra");
+            stage.setScene(escenaCompra);
+            stage.show();
         }catch (IOException e){
             System.out.println(e.getMessage());
         }

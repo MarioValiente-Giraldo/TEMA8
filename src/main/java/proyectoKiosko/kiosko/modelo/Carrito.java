@@ -23,5 +23,8 @@ public class Carrito {
         }
         return precioTotal;
     }
+    public List<Producto> getProductos(){
+        return this.productos;
+    }
 
 }
