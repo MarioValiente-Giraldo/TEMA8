@@ -21,6 +21,8 @@ public class ejercicio5 extends Application {
             primaryStage.setScene(scene);
             primaryStage.setTitle("Ejercicio 5");
             primaryStage.show();
+
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
