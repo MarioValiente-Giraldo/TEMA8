@@ -7,7 +7,7 @@ group = "org.example"
 version = "1.0-SNAPSHOT"
 
 application{
-    mainClass="BlocNotas.bloc.BlocNotas"
+    mainClass="tienda.Tienda"
 }
 javafx{
     modules("javafx.controls","javafx.fxml")
